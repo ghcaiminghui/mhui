@@ -16,5 +16,7 @@ Route::get('/', function () {
    return view('welcome');
 });
 
-Route::get('/myhui','Admin\MyhuiController@myhui');
+Route::any('/myhui','Admin\MyhuiController@myhui');
+
+Route::any('/access','Admin\MyhuiController@access_token');
 
